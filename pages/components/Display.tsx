@@ -10,7 +10,7 @@ export default function Display() {
             backgroundColor:"black",
             backgroundPosition:"center",
         }}>
-            <Box pt={30}>
+            <Box py={30} >
 
 
                 
@@ -21,12 +21,12 @@ export default function Display() {
                 Say Wow to Our New KickSale Display.
                 </Typography>
                 <Typography variant="subtitle1"  fontWeight="semi-bold"  textAlign="center">
-                Ideas that launch on Kicksale don't seem to be solely highly-vetted by our <br /> team of skilled analysts, however conjointly by industry-leading expertise.
+                Ideas that launch on Kicksale dont seem to be solely highly-vetted by our <br /> team of skilled analysts, however conjointly by industry leading expertise.
 
                 </Typography>
             </Box>
-                 <Box display="flex" justifyContent="flex-start" alignItems="flex-start">
-                    <Image src={images.planet1} width="265" height="270" />
+                 <Box py={3} display="flex" justifyContent="flex-start" alignItems="flex-start">
+                    <Image src={images.planet1} alt="image" width="265" height="270" />
                 </Box>
                 
                 <Box display="flex" justifyContent="center" alignItems="center">
@@ -42,8 +42,8 @@ export default function Display() {
                     </Box>
                 </Box>
 
-                <Box pr={10} display="flex" justifyContent="flex-end" alignItems="flex-end">
-                    <Image src={images.planet2} width="245" height="250"  />
+                <Box pr={10} py={3} display="flex" justifyContent="flex-end" alignItems="flex-end">
+                    <Image src={images.planet2} alt="image" width="245" height="250"  />
                 </Box>
 
             

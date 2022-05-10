@@ -56,47 +56,52 @@ const theme = responsiveFontSizes(
       contentWidth: 1236,
     },
     typography: {
-      
+
+      fontFamily: [
+        'Syne',
+        'sans-serif',
+      ].join(','),
 
 
       allVariants: {
         fontFamily: '"Syne", sans-serif',
         color: '#FFF',
+        fontWeight: '700px',
       },
       // caption: {
       //   fontSize: 12,
       // },
-      body1: {
-        fontSize: '0.8rem',
-        fontFamily: '"Syne", sans-serif'
+      // body1: {
+      //   fontSize: '0.8rem',
+      //   fontFamily: '"Syne", sans-serif'
 
-      },
-      subtitle1: {
-        fontSize: "1.8rem"
-      },
-      h6: {
-        fontSize: '0.85rem',
-      },
+      // },
+      // subtitle1: {
+      //   fontSize: "1.8rem"
+      // },
+      // h6: {
+      //   fontSize: '0.85rem',
+      // },
 
-      h5: {
-        fontFamily: '"Syne", sans-serif',
+      // h5: {
+      //   fontFamily: '"Syne", sans-serif',
 
-        fontSize: '1rem',
-      },
+      //   fontSize: '1rem',
+      // },
 
-      subtitle1: {
-        lineHeight: "2",
-        fontSize: "1rem"
+      // subtitle1: {
+      //   lineHeight: "2",
+      //   fontSize: "1rem"
 
-      },
-      caption: {
+      // },
+      // caption: {
 
-      },
-      fontSize: 12,
-      button: {
-        textTransform: 'none',
-        fontWeight: 'medium',
-      },
+      // },
+      // fontSize: 12,
+      // button: {
+      //   textTransform: 'none',
+      //   fontWeight: 'medium',
+      // },
     },
     zIndex: {
       appBar: 1200,

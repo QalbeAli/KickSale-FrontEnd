@@ -18,8 +18,8 @@ const Home: NextPage = () => {
     <Navbar />
     <Hero />
     <Display />
-    {/* <Tier /> */}
-    {/* <Faqs /> */}
+    <Tier />
+    <Faqs />
     <Ethereum />
     <Footer />
 

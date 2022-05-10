@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app'
 import theme from '../styles/theme'
 import { ThemeProvider } from '@mui/material/styles';
 
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
 

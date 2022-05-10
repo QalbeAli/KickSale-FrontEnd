@@ -2,6 +2,13 @@ import { Typography, Container, Button, Stack, styled, Grid } from '@mui/materia
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import images from "../../public/images/images";
+
+const StyledButton = styled(Button)(({ theme }) => `
+&:hover {
+    background-color:#16182D; ;
+}
+`)
+
 export default function Hero() {
     return(
         <>
@@ -20,26 +27,27 @@ export default function Hero() {
                     <Grid item md={6} xs={12}>
                         <Box display="flex" justifyContent="center" alignItems="center" p={5}>
                                 <Box display="flex"  p={3}  border="7px solid #CB3694" borderRadius="30px" sx={{backgroundColor:"#16182D"}}>
-                                    <Box>
-                                    <Image src={images.mirl2} width="250" height="250" />
+                                    <Box >
+                                    <Image src={images.mirl2} alt="image"  />
                                     </Box>
 
                                     <Box pl={2}>
-                                    <Typography variant="h4" color="white">
+                                    <Typography variant="h5" color="white">
                                         Kickwe MiRl
                                     </Typography>
                                     <Typography variant="subtitle2" color="white">
                                         the journey of kikwe is starting
                                     </Typography>
 
-                                        <Box pt={6} display="flex" >
-                                            <Button variant="contained" sx={{backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.7rem"}}>
+                                    <Box pt={1} display="flex" >
+                                            <StyledButton variant="contained" sx={{ width:"9rem", backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.5rem", fontWeight:"bold"}}>
                                                  Registration Opened
-                                            </Button>
+                                            </StyledButton>
                                             <Box pt={1} pl={1}>
-                                            <Image src={images.avax} width="18" height="18" />
+                                            <Image src={images.avax} alt="image" width="18" height="18" />
                                             </Box>
                                         </Box>
+
 
                                         <Box p={1}>
                                             <Typography variant="subtitle2" color="white">
@@ -52,10 +60,10 @@ export default function Hero() {
                                              </Typography>
                                         </Box>
 
-                                       <Box p={2} display="flex" justifyContent="center">
-                                            <Button variant="contained" sx={{width:"100%", fontWeight:"semi-bold" ,fontSize:"1rem", borderRadius:"20px", backgroundColor:"#5133D5"}} >
+                                       <Box p={2} >
+                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </Button>
+                                            </StyledButton>
                                         </Box> 
 
                                     </Box>
@@ -67,28 +75,29 @@ export default function Hero() {
                         </Box>
                     </Grid>
                     <Grid item md={6} xs={12}>
-                        <Box  p={5}>
+                        <Box display="flex" justifyContent="center" alignItems="center" p={5}>
                                 <Box display="flex"  p={3}  border="7px solid #CB3694" borderRadius="30px" sx={{backgroundColor:"#16182D"}}>
-                                    <Box>
-                                    <Image src={images.metaland}  />
+                                    <Box >
+                                    <Image src={images.metaland} alt="image"  />
                                     </Box>
 
                                     <Box pl={2}>
-                                    <Typography variant="h4" color="white">
-                                        MetaLand
+                                    <Typography variant="h5" color="white">
+                                        Kickwe MiRl
                                     </Typography>
                                     <Typography variant="subtitle2" color="white">
-                                    Metaland is a virtual world where <br /> players can build, own, and monetize their gaming.
+                                        the journey of kikwe is starting
                                     </Typography>
 
-                                        <Box pt={1} display="flex" >
-                                            <Button variant="contained" sx={{backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.7rem"}}>
+                                    <Box pt={1} display="flex" >
+                                            <StyledButton variant="contained" sx={{ width:"9rem", backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.5rem", fontWeight:"bold"}}>
                                                  Registration Opened
-                                            </Button>
+                                            </StyledButton>
                                             <Box pt={1} pl={1}>
-                                            <Image src={images.avax} width="18" height="18" />
+                                            <Image src={images.avax} alt="image" width="18" height="18" />
                                             </Box>
                                         </Box>
+
 
                                         <Box p={1}>
                                             <Typography variant="subtitle2" color="white">
@@ -101,10 +110,10 @@ export default function Hero() {
                                              </Typography>
                                         </Box>
 
-                                       <Box p={2} display="flex" justifyContent="center">
-                                            <Button variant="contained" sx={{width:"100%", fontWeight:"semi-bold" ,fontSize:"1rem", borderRadius:"20px", backgroundColor:"#5133D5"}} >
+                                       <Box p={2} >
+                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </Button>
+                                            </StyledButton>
                                         </Box> 
 
                                     </Box>
@@ -121,26 +130,27 @@ export default function Hero() {
                     <Grid item md={6} xs={12}>
                         <Box display="flex" justifyContent="center" alignItems="center" p={5}>
                                 <Box display="flex"  p={3}  border="7px solid #CB3694" borderRadius="30px" sx={{backgroundColor:"#16182D"}}>
-                                    <Box>
-                                    <Image src={images.nose} width="250" height="250" />
+                                    <Box >
+                                    <Image src={images.nose} alt="image"  />
                                     </Box>
 
                                     <Box pl={2}>
-                                    <Typography variant="h4" color="white">
-                                    KickMe NOS
+                                    <Typography variant="h5" color="white">
+                                        Kickwe MiRl
                                     </Typography>
                                     <Typography variant="subtitle2" color="white">
-                                    Metaland is a virtual world where <br /> players can build, own, and monetize  their  gaming.
+                                        the journey of kikwe is starting
                                     </Typography>
 
-                                        <Box pt={1} display="flex" >
-                                            <Button variant="contained" sx={{backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.7rem"}}>
+                                    <Box pt={1} display="flex" >
+                                            <StyledButton variant="contained" sx={{ width:"9rem", backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.5rem", fontWeight:"bold"}}>
                                                  Registration Opened
-                                            </Button>
+                                            </StyledButton>
                                             <Box pt={1} pl={1}>
-                                            <Image src={images.avax} width="18" height="18" />
+                                            <Image src={images.avax} alt="image" width="18" height="18" />
                                             </Box>
                                         </Box>
+
 
                                         <Box p={1}>
                                             <Typography variant="subtitle2" color="white">
@@ -153,10 +163,10 @@ export default function Hero() {
                                              </Typography>
                                         </Box>
 
-                                       <Box p={2} display="flex" justifyContent="center">
-                                            <Button variant="contained" sx={{width:"100%", fontWeight:"semi-bold" ,fontSize:"1rem", borderRadius:"20px", backgroundColor:"#5133D5"}} >
+                                       <Box p={2} >
+                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </Button>
+                                            </StyledButton>
                                         </Box> 
 
                                     </Box>
@@ -168,28 +178,29 @@ export default function Hero() {
                         </Box>
                     </Grid>
                     <Grid item md={6} xs={12}>
-                        <Box  p={5}>
+                        <Box display="flex" justifyContent="center" alignItems="center" p={5}>
                                 <Box display="flex"  p={3}  border="7px solid #CB3694" borderRadius="30px" sx={{backgroundColor:"#16182D"}}>
-                                    <Box>
-                                    <Image src={images.avai}  />
+                                    <Box >
+                                    <Image src={images.avai} alt="image"  />
                                     </Box>
 
                                     <Box pl={2}>
-                                    <Typography variant="h4" color="white">
-                                        MetaLand
+                                    <Typography variant="h5" color="white">
+                                        Kickwe MiRl
                                     </Typography>
                                     <Typography variant="subtitle2" color="white">
-                                    Metaland is a virtual world where <br /> players can build, own, and monetize their gaming.
+                                        the journey of kikwe is starting
                                     </Typography>
 
-                                        <Box pt={1} display="flex" >
-                                            <Button variant="contained" sx={{backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.7rem"}}>
+                                    <Box pt={1} display="flex" >
+                                            <StyledButton variant="contained" sx={{ width:"9rem", backgroundColor:"#CB3694", borderRadius:"20px", fontSize:"0.5rem", fontWeight:"bold"}}>
                                                  Registration Opened
-                                            </Button>
+                                            </StyledButton>
                                             <Box pt={1} pl={1}>
-                                            <Image src={images.avax} width="18" height="18" />
+                                            <Image src={images.avax} alt="image" width="18" height="18" />
                                             </Box>
                                         </Box>
+
 
                                         <Box p={1}>
                                             <Typography variant="subtitle2" color="white">
@@ -202,10 +213,10 @@ export default function Hero() {
                                              </Typography>
                                         </Box>
 
-                                       <Box p={2} display="flex" justifyContent="center">
-                                            <Button variant="contained" sx={{width:"100%", fontWeight:"semi-bold" ,fontSize:"1rem", borderRadius:"20px", backgroundColor:"#5133D5"}} >
+                                       <Box p={2} >
+                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </Button>
+                                            </StyledButton>
                                         </Box> 
 
                                     </Box>
