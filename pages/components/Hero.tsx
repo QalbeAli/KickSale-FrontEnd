@@ -9,10 +9,18 @@ const StyledButton = styled(Button)(({ theme }) => `
 }
 `)
 
+const StyledButton2 = styled(Button)(({ theme }) => `
+box-shadow: 0 7px 22px 2px #5133d599;
+&:hover {
+    background-color:#16182D; ;
+}
+`)
+
 export default function Hero() {
     return(
         <>
         <Box
+        pb={10}
         sx={{
             backgroundImage: `url(images/Rectangle.png)`,
         }}
@@ -61,9 +69,9 @@ export default function Hero() {
                                         </Box>
 
                                        <Box p={2} >
-                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
+                                            <StyledButton2 variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </StyledButton>
+                                            </StyledButton2>
                                         </Box> 
 
                                     </Box>
@@ -111,9 +119,9 @@ export default function Hero() {
                                         </Box>
 
                                        <Box p={2} >
-                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
+                                            <StyledButton2 variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </StyledButton>
+                                            </StyledButton2>
                                         </Box> 
 
                                     </Box>
@@ -164,9 +172,9 @@ export default function Hero() {
                                         </Box>
 
                                        <Box p={2} >
-                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
+                                            <StyledButton2 variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </StyledButton>
+                                            </StyledButton2>
                                         </Box> 
 
                                     </Box>
@@ -214,9 +222,9 @@ export default function Hero() {
                                         </Box>
 
                                        <Box p={2} >
-                                            <StyledButton variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
+                                            <StyledButton2 variant="contained" sx={{ width:"10rem", fontSize:"0.8rem", fontWeight:"bold", borderRadius:"20px", backgroundColor:"#5133D5",}}  >
                                             More Details
-                                            </StyledButton>
+                                            </StyledButton2>
                                         </Box> 
 
                                     </Box>

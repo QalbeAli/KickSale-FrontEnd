@@ -4,6 +4,12 @@ import Image from 'next/image';
 import images from "../../public/images/images";
 import TextField from '@mui/material/TextField';
 
+const StyledButton2 = styled(Button)(({ theme }) => `
+box-shadow: 0 7px 22px 2px #5133d599;
+&:hover {
+    background-color:#16182D; ;
+}
+`)
 
 
 export default function Ethereum() {
@@ -43,10 +49,10 @@ export default function Ethereum() {
                                 style={{width:"100%", height:"50px", borderRadius:"20px"}}
                                 />
 
-                                <Box py={1} px={2} >
-                                <Button variant="contained" sx={{borderRadius:"20px", backgroundColor:"#5133D5", width:"7rem", fontSize:"1rem"}}>
+                                <Box pt={0.5} px={0.5} >
+                                <StyledButton2 variant="contained" sx={{borderRadius:"20px", backgroundColor:"#5133D5", width:"7.5rem",  fontSize:"1rem"}}>
                                 Subscribe
-                                </Button>
+                                </StyledButton2>
                                 </Box>
                             </Box>
                     </Box>

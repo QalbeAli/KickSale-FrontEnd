@@ -2,15 +2,31 @@ import { Typography, Container, Button, Stack, styled, Grid } from '@mui/materia
 import Box from '@mui/material/Box';
 import Image from 'next/image';
 import images from "../../public/images/images";
+
+const StyledButton = styled(Button)(({ theme }) => `
+&:hover {
+    background-color:#16182D; ;
+}
+`)
+
+const StyledButton2 = styled(Button)(({ theme }) => `
+box-shadow: 0 7px 22px 2px #5133d599;
+&:hover {
+    background-color:#16182D; ;
+}
+`)
+
 export default function Display() {
     return(
         <>
-        <Box sx={{
+        <Box pt={30} sx={{backgroundColor:"black"}}>
+        <Box pt={20}  sx={{
             backgroundImage: `url(images/circle.png)`,
             backgroundColor:"black",
             backgroundPosition:"center",
+            backgroundRepeat:"none",
         }}>
-            <Box py={30} >
+            <Box  >
 
 
                 
@@ -25,28 +41,37 @@ export default function Display() {
 
                 </Typography>
             </Box>
-                 <Box py={3} display="flex" justifyContent="flex-start" alignItems="flex-start">
-                    <Image src={images.planet1} alt="image" width="265" height="270" />
-                </Box>
                 
-                <Box display="flex" justifyContent="center" alignItems="center">
+
+                <Box pb={10}>
+            <Grid container>
+                <Grid item md="4" sm={4} xs="4">
+                <Box py={3} >
+                    <Image src={images.planet1} alt="image" width="235" height="240" />
+                </Box>
+                </Grid>
+                <Grid item md="4" sm={4} xs="4">
+                <Box pt={6} sx={{transform:"translateY(150%)"}} display="flex" justifyContent="center" alignItems="center">
                     <Box mr={3}>
-                        <Button variant="contained" sx={{backgroundColor:"black", border:"2px solid #CB3694", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
+                        <StyledButton variant="contained" sx={{backgroundColor:"black", border:"2px solid #CB3694", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
                             Our Project
-                        </Button>
+                        </StyledButton>
                     </Box>
                     <Box>
-                        <Button variant="contained" sx={{backgroundColor:"#5133D5", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
+                        <StyledButton2 variant="contained" sx={{backgroundColor:"#5133D5", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
                             Metaverse NFTs
-                        </Button>
+                        </StyledButton2>
                     </Box>
                 </Box>
-
+                </Grid>
+                <Grid item md="4" sm={4} xs="4">
                 <Box pr={10} py={3} display="flex" justifyContent="flex-end" alignItems="flex-end">
-                    <Image src={images.planet2} alt="image" width="245" height="250"  />
+                    <Image src={images.planet2} alt="image" width="275" height="280"  />
                 </Box>
-
-            
+                </Grid>
+            </Grid>
+            </Box>
+            </Box>
         </Box>
         </>
     )

@@ -8,6 +8,7 @@ import { lineHeight } from '@mui/system';
 import { useState } from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 const StyledButton = styled(Button)(({ theme }) => `
@@ -20,6 +21,13 @@ font-family:'Nexa Bold',Helvetica,Arial,Lucida,sans-serif;
 margin-top:10px !important;
 &:hover {
     background-color:#31303E ;
+}
+`)
+
+const StyledButton2 = styled(Button)(({ theme }) => `
+box-shadow: 0 7px 22px 2px #5133d599;
+&:hover {
+    background-color:#16182D; ;
 }
 `)
 
@@ -42,18 +50,18 @@ export default function Navbar() {
             backgroundImage: `url(images/bg1.png)`,
             maxWidth:"1980px",
             minWidth:"400px",
-            minHeight:"780px",
+            minHeight:"1080px",
             backgroundPosition:"center"
+            
                   
         }}
-        >
-
+        >   
             <Box display="flex" justifyContent="center" alignItems="center">
-                <Container style={{ padding: 0 }}>
-            <AppBar position="static"  sx={{backgroundColor:"black", borderRadius:"80px", background:"rgba(0,0,0,.6)" }}   >
-            <Container style={{ padding: 0 }}>
+
+            <Box width="96%" py={3} display="flex" justifyContent="center" alignItems="center">
+            <AppBar position="static"  sx={{backgroundColor:"black", height:"6rem", borderRadius:"80px", background:"rgba(0,0,0,.7)" }}   >
                 <Toolbar >
-                    <Box py={1.5} display="flex" justifyContent="center" alignItems="center">
+                    <Box  display="flex" justifyContent="center" alignItems="center">
                         <Image src={images.logo1} alt="image" width="310" />
                     </Box>
 
@@ -77,7 +85,7 @@ export default function Navbar() {
                     </Box>
 
 
-                    <Box px={2} style={{display:"flex", justifyContent:"flex-end", alignItems:"flex-end",flexGrow:1, }} >
+                    <Box  style={{display:"flex", justifyContent:"flex-end", alignItems:"flex-end",flexGrow:1, }} >
                         <Box pr={2}>
                         <StyledButton variant="contained" sx={{backgroundColor:"#31303E"}}
                         id="demo-positioned-button"
@@ -86,7 +94,7 @@ export default function Navbar() {
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick} 
                         >
-                             ACCOUNTS
+                             ACCOUNTS <ArrowDropDownIcon />
                         </StyledButton>
                         <Menu
         id="demo-positioned-menu"
@@ -111,17 +119,16 @@ export default function Navbar() {
                         </Box>
                         
                         <Box>
-                        <StyledButton variant="contained" sx={{borderRadius:"20px",fontSize:"0.9rem", lineHeight:"1.5rem", fontWeight:"light", backgroundColor:"#5133D5"}}>
+                        <StyledButton variant="contained" sx={{borderRadius:"20px",fontSize:"0.9rem", width:"8rem", lineHeight:"1.5rem", fontWeight:"light", backgroundColor:"#5133D5"}}>
                              WALLET
                         </StyledButton>
                         </Box>
                     </Box>
                 </Toolbar>
-            </Container>
 
 
         </AppBar >
-        </Container>
+            </Box>
             </Box>
 
 
@@ -131,15 +138,15 @@ export default function Navbar() {
 
 
 
-            <Box sx={{transform: "translateY(150%)",  }}>
+            <Box sx={{transform: "translateY(100%)",  }}>
                 <Typography variant="h2" color="white"  textAlign="center">
                     A LAUNCHPAD FOR <br /> INITIAL METAVERSE OFFEREINGS
                 </Typography>
                 <Box py={3} sx={{display:"flex", justifyContent:"center", alignItems:"center"}}>
                     <Box pr={2}>
-                        <StyledButton variant="contained" sx={{borderRadius:"20px", fontSize:"1rem", backgroundColor:"#5133D5"}}>
+                        <StyledButton2 variant="contained" sx={{borderRadius:"20px", fontSize:"1rem", backgroundColor:"#5133D5", marginTop:"10px", fontWeight:"bold"}}>
                         DISCOVER
-                        </StyledButton>
+                        </StyledButton2>
                     </Box>
                    
                     <Box>

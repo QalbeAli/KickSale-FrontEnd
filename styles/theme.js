@@ -55,6 +55,20 @@ const theme = responsiveFontSizes(
     layout: {
       contentWidth: 1236,
     },
+
+    overrides: {
+      MuiExpansionPanelSummary: {
+       expanded: {
+         boxShadow: "0 1px 12px 0 rgba(0,0,0,.11)"
+       },
+       root: {
+         "&$expanded": {
+           boxShadow: "0 1px 12px 0 rgba(0,0,0,.11)"
+         }
+        }
+      }
+    },
+    
     typography: {
 
       fontFamily: [

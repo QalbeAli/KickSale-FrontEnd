@@ -5,18 +5,23 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { accordionSummaryClasses} from "@mui/material"
-const StyledAccordion = styled(Accordion)(({ theme }) => `
+const StyledAccordion = styled(Accordion)(({ theme,active }:any) => `
 font-size:1rem;
 font-weight:semi-bold;
 border-radius:20px;
 background-color:transparent;
 &:hover {
-    background-color:linear-gradient(to right, #CB3694 40%, #5133D5 60%) ;
+    background-color:#c83695 ;
 }
+
+
 ${accordionSummaryClasses.expanded}:{
-  background-color:linear-gradient(to right, #CB3694 40%, #5133D5 60%);
+  
 }
 `)
+
+
+
 
 export default function Faqs() {
     return(
@@ -44,7 +49,7 @@ export default function Faqs() {
                   <Container>
 
                   <Box py={1} borderBottom="2px solid white">
-                <Accordion sx={{background:"linear-gradient(to right, #CB3694 40%, #5133D5 60%)"}} style={{borderRadius:"10px"}}>
+                <StyledAccordion   style={{borderRadius:"10px"}}>
                     <AccordionSummary
                       expandIcon={<ArrowDownwardIcon sx={{color:"white"}} />}
                       aria-controls="panel1a-content"
@@ -65,11 +70,11 @@ export default function Faqs() {
                         interoperable environment on the Binance Smart Chain.
                       </Typography>
                     </AccordionDetails>
-                  </Accordion>
+                  </StyledAccordion>
                   </Box>
                     
                   <Box py={1} borderBottom="2px solid white">
-                <Accordion sx={{background:"linear-gradient(to right, #CB3694 40%, #5133D5 60%)"}} style={{borderRadius:"10px"}}>
+                <StyledAccordion  style={{borderRadius:"10px"}}>
                     <AccordionSummary
                       expandIcon={<ArrowDownwardIcon sx={{color:"white"}} />}
                       aria-controls="panel1a-content"
@@ -90,10 +95,10 @@ export default function Faqs() {
                         interoperable environment on the Binance Smart Chain.
                       </Typography>
                     </AccordionDetails>
-                  </Accordion>
+                  </StyledAccordion>
                   </Box>
                   <Box py={1} borderBottom="2px solid white">
-                <Accordion sx={{background:"linear-gradient(to right, #CB3694 40%, #5133D5 60%)"}} style={{borderRadius:"10px"}}>
+                <StyledAccordion  style={{borderRadius:"10px"}}>
                     <AccordionSummary
                       expandIcon={<ArrowDownwardIcon sx={{color:"white"}} />}
                       aria-controls="panel1a-content"
@@ -114,10 +119,10 @@ export default function Faqs() {
                         interoperable environment on the Binance Smart Chain.
                       </Typography>
                     </AccordionDetails>
-                  </Accordion>
+                  </StyledAccordion>
                   </Box>
                   <Box py={1} borderBottom="2px solid white">
-                <Accordion sx={{background:"linear-gradient(to right, #CB3694 40%, #5133D5 60%)"}} style={{borderRadius:"10px"}}>
+                <StyledAccordion  style={{borderRadius:"10px"}}>
                     <AccordionSummary
                       expandIcon={<ArrowDownwardIcon sx={{color:"white"}} />}
                       aria-controls="panel1a-content"
@@ -138,7 +143,7 @@ export default function Faqs() {
                         interoperable environment on the Binance Smart Chain.
                       </Typography>
                     </AccordionDetails>
-                  </Accordion>
+                  </StyledAccordion>
                   </Box>
                   
                   </Container>

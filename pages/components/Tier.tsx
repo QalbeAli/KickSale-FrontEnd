@@ -12,15 +12,20 @@ import images from "../../public/images/images";
 export default function Tier() {
   return (
     <>
+    <Box pt={10} sx={{backgroundColor: "black",}}>
       <Box
+      
         sx={{
           backgroundImage: `url(images/bg2.png)`,
           backgroundColor: "black",
+          backgroundPosition: "center", 
         }}
       >
         <Container>
-          <Box>
+          <Box pt={10} display="flex" justifyContent="center"
+              alignItems="center" >
             <Box
+              width="70%"
               display="flex"
               justifyContent="center"
               alignItems="center"
@@ -443,6 +448,7 @@ export default function Tier() {
             </Box>
           </Box>
         </Container>
+        </Box>
       </Box>
     </>
   );
