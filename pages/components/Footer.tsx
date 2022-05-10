@@ -28,7 +28,7 @@ export default function Footer() {
                     </Box>
                     <Box pr={4}>
                         <Typography variant="h5">
-                            About Us
+                            ABOUT US
                         </Typography>
                     </Box>
                     <Box pr={4}>

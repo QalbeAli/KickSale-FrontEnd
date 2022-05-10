@@ -77,7 +77,7 @@ export default function Navbar() {
                     </Box>
 
 
-                    <Box style={{display:"flex", justifyContent:"flex-end", alignItems:"flex-end",flexGrow:1, }} >
+                    <Box px={2} style={{display:"flex", justifyContent:"flex-end", alignItems:"flex-end",flexGrow:1, }} >
                         <Box pr={2}>
                         <StyledButton variant="contained" sx={{backgroundColor:"#31303E"}}
                         id="demo-positioned-button"
