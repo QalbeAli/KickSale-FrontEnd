@@ -11,6 +11,13 @@ import planet2 from '../../public/images/planet2.png';
 import bg2 from '../../public/images/bg2.png';
 import ethbg from '../../public/images/ethbg.png';
 import eth from '../../public/images/eth.png';
+import man1 from '../../public/images/man1.png';
+import smokeEffect from '../../public/images/smokeEffect.png';
+import bgmatt from '../../public/images/bgmatt.jpg';
+import projectcard1 from '../../public/images/projectcard1.png';
+import projectcard2 from '../../public/images/projectcard2.png';
+import projectcard3 from '../../public/images/projectcard3.png';
+import projectcard4 from '../../public/images/projectcard4.png';
 export default {
     logo1,
     bg1,
@@ -25,5 +32,12 @@ export default {
     bg2,
     ethbg,
     eth,
+    man1,
+    smokeEffect,
+    bgmatt,
+    projectcard1,
+    projectcard2,
+    projectcard3,
+    projectcard4,
 
 }

@@ -31,7 +31,7 @@ export default function Tier() {
               alignItems="center"
               flexDirection="column"
               border="1.5px solid silver"
-              borderRadius="20px"
+              borderRadius="35px"
               sx={{
               background:"linear-gradient(to right, #2F1132 44%, #190E3A 66%)"
 

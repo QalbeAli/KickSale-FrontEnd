@@ -45,26 +45,26 @@ export default function Display() {
 
                 <Box pb={10}>
             <Grid container>
-                <Grid item md="4" sm={4} xs="4">
+                <Grid item md={4} sm={4} xs={4}>
                 <Box py={3} >
                     <Image src={images.planet1} alt="image" width="235" height="240" />
                 </Box>
                 </Grid>
-                <Grid item md="4" sm={4} xs="4">
+                <Grid item md={4} sm={4} xs={4}>
                 <Box pt={6} sx={{transform:"translateY(150%)"}} display="flex" justifyContent="center" alignItems="center">
                     <Box mr={3}>
-                        <StyledButton variant="contained" sx={{backgroundColor:"black", border:"2px solid #CB3694", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
+                        <StyledButton variant="contained" sx={{backgroundColor:"black", border:"2px solid #CB3694", borderRadius:"20px", fontSize:"0.8rem", fontWeight:"bold"}}>
                             Our Project
                         </StyledButton>
                     </Box>
                     <Box>
-                        <StyledButton2 variant="contained" sx={{backgroundColor:"#5133D5", borderRadius:"20px", fontWeight:"semi-bold", fontSize:"1rem"}}>
+                        <StyledButton2 variant="contained" sx={{backgroundColor:"#5133D5", borderRadius:"20px", fontSize:"0.8rem", fontWeight:"bold"}}>
                             Metaverse NFTs
                         </StyledButton2>
                     </Box>
                 </Box>
                 </Grid>
-                <Grid item md="4" sm={4} xs="4">
+                <Grid item md={4} sm={4} xs={4}>
                 <Box pr={10} py={3} display="flex" justifyContent="flex-end" alignItems="flex-end">
                     <Image src={images.planet2} alt="image" width="275" height="280"  />
                 </Box>

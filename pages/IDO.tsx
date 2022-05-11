@@ -7,18 +7,16 @@ import {
   Grid,
 } from "@mui/material";
 import Box from "@mui/material/Box";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import Link from "next/link";
-import images from "../../public/images/images";
-import { lineHeight } from "@mui/system";
-import { useState } from "react";
+import images from "../public/images/images";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import IconButton from "@mui/material/IconButton";
-
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import { useState } from "react";
+import Project from "./components/Project";
 const StyledButton = styled(Button)(
   ({ theme }) => `
 font-size:1rem;
@@ -43,7 +41,7 @@ box-shadow: 0 7px 22px 2px #5133d599;
 `
 );
 
-export default function Navbar() {
+export default function IDO() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -57,15 +55,9 @@ export default function Navbar() {
     <>
       <Box
         sx={{
-          backgroundImage: `url(images/bg1.png)`,
-          backgroundColor: "black",
-          maxWidth: "1980px",
-          minWidth: "500px",
-          minHeight: "1080px",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          margin: "0 auto",
-          position: "static",
+          backgroundImage: `url(images/bgmatt.jpg)`,
+          width:"100%"
+          
         }}
       >
         <Box ml={8} py={3}>
@@ -82,7 +74,7 @@ export default function Navbar() {
             >
               <Toolbar sx={{ paddingY: "1rem" }}>
                 <Box>
-                  <Link href="/">
+                <Link href="/">
                     <a >
                       <Image src={images.logo1} alt="image" width="310" />
                     </a>
@@ -97,16 +89,12 @@ export default function Navbar() {
                   <Box pl={5}>
                     <Stack direction="row" spacing={1}>
                       <Box>
-                        <Link href="/IDO">
-                          <a >
-                            <StyledButton
-                              variant="contained"
-                              sx={{ backgroundColor: "#31303E" }}
-                            >
-                              IDO
-                            </StyledButton>
-                          </a>
-                        </Link>
+                        <StyledButton
+                          variant="contained"
+                          sx={{ backgroundColor: "#31303E" }}
+                        >
+                          IDO
+                        </StyledButton>
                       </Box>
                       <Box>
                         <StyledButton
@@ -222,82 +210,8 @@ export default function Navbar() {
             </AppBar>
           </Box>
         </Box>
+      <Project/>
 
-        <Box>
-          <Box
-            pt={10}
-            sx={{
-              backgroundImage: `url(images/smokeEffect.png)`,
-              minWidth: "1000",
-              minHeight: "300",
-              maxWidth: "1000",
-              backgroundPosition: "center",
-            }}
-          >
-            <Grid container spacing={3}>
-              <Grid item xs={1.5}>
-                <Box>
-                  <Image src={images.man1} alt="images" />
-                </Box>
-              </Grid>
-              <Grid item xs={7.4}>
-                <Box sx={{ transform: "translateY(180%)" }}>
-                  <Typography variant="h3" color="white" textAlign="center">
-                    A LAUNCHPAD FOR <br /> INITIAL METAVERSE OFFEREINGS
-                  </Typography>
-                  <Box
-                    py={3}
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Box pr={2}>
-                      <StyledButton2
-                        variant="contained"
-                        sx={{
-                          borderRadius: "20px",
-                          fontSize: "1rem",
-                          backgroundColor: "#5133D5",
-                          marginTop: "10px",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        DISCOVER
-                      </StyledButton2>
-                    </Box>
-
-                    <Box>
-                      <StyledButton
-                        variant="contained"
-                        sx={{
-                          borderRadius: "20px",
-                          fontSize: "1rem",
-                          backgroundColor: "#31303E",
-                        }}
-                      >
-                        BUY TOKENS
-                      </StyledButton>
-                    </Box>
-                  </Box>
-                </Box>
-              </Grid>
-              <Grid item xs={3.1}>
-                <Box
-                  mt={20}
-                  sx={{
-                    backgroundImage: `url(images/man2.png)`,
-                    maxWidth: "350px",
-                    minWidth: "350px",
-                    minHeight: "528px",
-                    transform: "translate3d(1e-5px, 94px, 1e-5px)",
-                  }}
-                ></Box>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
       </Box>
     </>
   );
