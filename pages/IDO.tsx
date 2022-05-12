@@ -16,14 +16,14 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { useState } from "react";
-import Project from "./components/Project";
+import Project from "../components/Project";
 const StyledButton = styled(Button)(
   ({ theme }) => `
 font-size:1rem;
 font-weight:semi-bold;
 border-radius:20px;
 height:2.5rem;
-background-color:"red";
+background-color:"#31303E";
 font-family:'Nexa Bold',Helvetica,Arial,Lucida,sans-serif;
 margin-top:10px !important;
 &:hover {
@@ -92,6 +92,7 @@ export default function IDO() {
                         <StyledButton
                           variant="contained"
                           sx={{ backgroundColor: "#31303E" }}
+                          className="md:bg-[#31303E]"
                         >
                           IDO
                         </StyledButton>
@@ -105,7 +106,9 @@ export default function IDO() {
                             color: "#8B70FF",
                             fontWeight: "bold",
                             fontSize: "1rem",
+                            
                           }}
+                          className="md:bg-[#31303E]"
                         >
                           IMO
                         </StyledButton>
@@ -115,10 +118,11 @@ export default function IDO() {
                           variant="contained"
                           sx={{
                             borderRadius: "16rem",
-                            backgroundColor: "#31303E",
+                            backgroundColor: "red",
                             fontWeight: "semi-bold",
                             fontSize: "1rem",
                           }}
+                          className="md:bg-[#31303E]"
                         >
                           IGO
                         </StyledButton>

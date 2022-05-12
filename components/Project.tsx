@@ -6,10 +6,10 @@ import {
   styled,
   Grid,
 } from "@mui/material";
-import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import Image from "next/image";
-import images from "../../public/images/images";
+import Link from "next/link";
+import images from "../public/images/images";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -29,7 +29,7 @@ export default function Project() {
       <Box>
         <Container>
           <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h2" fontWeight="bold">
+            <Typography  variant="h2" fontWeight="bold">
               Projects
             </Typography>
           </Box>
@@ -74,7 +74,7 @@ export default function Project() {
                             </StyledButton2>
                           </Box>
                           <Box pt={3}>
-                            <Image src={images.avax} width="25" height="25" />
+                            <Image src={images.avax} alt="image" width="25" height="25" />
                           </Box>
                           <Box py={2}>
                             <Typography variant="subtitle1" pt={1} px={1}>
@@ -92,9 +92,9 @@ export default function Project() {
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
                             in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If
+                            words which dont look even slightly believable. If
                             you are going to use a passage of Lorem Ipsum, you
-                            need to be sure there isn't anything.
+                            need to be sure there isnt anything.
                           </Typography>
                         </Box>
                       </Box>
@@ -176,6 +176,9 @@ export default function Project() {
                         justifyContent="center"
                         alignItems="center"
                       >
+
+                        <Link href="/staking">
+                        <a >
                         <StyledButton2
                           variant="contained"
                           sx={{
@@ -186,6 +189,9 @@ export default function Project() {
                         >
                           Purchase
                         </StyledButton2>
+                        </a>
+                        </Link>
+                        
                       </Box>
                     </Container>
                   </Box>
@@ -225,7 +231,7 @@ export default function Project() {
                             </StyledButton2>
                           </Box>
                           <Box pt={3}>
-                            <Image src={images.avax} width="25" height="25" />
+                            <Image src={images.avax} alt="image" width="25" height="25" />
                           </Box>
                           <Box py={2}>
                             <Typography variant="subtitle1" pt={1} px={1}>
@@ -243,9 +249,9 @@ export default function Project() {
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
                             in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If
+                            words which dont look even slightly believable. If
                             you are going to use a passage of Lorem Ipsum, you
-                            need to be sure there isn't anything.
+                            need to be sure there isnt anything.
                           </Typography>
                         </Box>
                       </Box>
@@ -380,7 +386,7 @@ export default function Project() {
                             </StyledButton2>
                           </Box>
                           <Box pt={3}>
-                            <Image src={images.avax} width="25" height="25" />
+                            <Image src={images.avax} alt="image" width="25" height="25" />
                           </Box>
                           <Box py={2}>
                             <Typography variant="subtitle1" pt={1} px={1}>
@@ -398,9 +404,9 @@ export default function Project() {
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
                             in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If
+                            words which dont look even slightly believable. If
                             you are going to use a passage of Lorem Ipsum, you
-                            need to be sure there isn't anything.
+                            need to be sure there isnt anything.
                           </Typography>
                         </Box>
                       </Box>
@@ -527,7 +533,7 @@ export default function Project() {
                             </StyledButton2>
                           </Box>
                           <Box pt={3}>
-                            <Image src={images.avax} width="25" height="25" />
+                            <Image src={images.avax} alt="image" width="25" height="25" />
                           </Box>
                           <Box py={2}>
                             <Typography variant="subtitle1" pt={1} px={1}>
@@ -545,9 +551,9 @@ export default function Project() {
                             There are many variations of passages of Lorem Ipsum
                             available, but the majority have suffered alteration
                             in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If
+                            words which dont look even slightly believable. If
                             you are going to use a passage of Lorem Ipsum, you
-                            need to be sure there isn't anything.
+                            need to be sure there isnt anything.
                           </Typography>
                         </Box>
                       </Box>

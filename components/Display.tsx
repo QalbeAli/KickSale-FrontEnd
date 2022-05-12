@@ -1,7 +1,7 @@
 import { Typography, Container, Button, Stack, styled, Grid } from '@mui/material';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
-import images from "../../public/images/images";
+import images from "../public/images/images";
 
 const StyledButton = styled(Button)(({ theme }) => `
 &:hover {
@@ -25,6 +25,10 @@ export default function Display() {
             backgroundColor:"black",
             backgroundPosition:"center",
             backgroundRepeat:"none",
+            maxWidth: "1980px",
+          minWidth: "500px",
+          minHeight: "1080px",
+          margin:"0 auto",
         }}>
             <Box  >
 
@@ -51,14 +55,14 @@ export default function Display() {
                 </Box>
                 </Grid>
                 <Grid item md={4} sm={4} xs={4}>
-                <Box pt={6} sx={{transform:"translateY(150%)"}} display="flex" justifyContent="center" alignItems="center">
+                <Box pt={6} sx={{transform:"translateY(150%)"}} className='sm:block items-center justify-center md:flex ' >
                     <Box mr={3}>
-                        <StyledButton variant="contained" sx={{backgroundColor:"black", border:"2px solid #CB3694", borderRadius:"20px", fontSize:"0.8rem", fontWeight:"bold"}}>
+                        <StyledButton variant="contained" className=' xs: bg-[#5133D5] rounded-3xl items-center justify-center   my-2 text-sm w-[10rem] ' >
                             Our Project
                         </StyledButton>
                     </Box>
                     <Box>
-                        <StyledButton2 variant="contained" sx={{backgroundColor:"#5133D5", borderRadius:"20px", fontSize:"0.8rem", fontWeight:"bold"}}>
+                        <StyledButton2 variant="contained" className=' xs: bg-[#5133D5] rounded-3xl my-2 items-center justify-center   text-sm w-[10rem]  '>
                             Metaverse NFTs
                         </StyledButton2>
                     </Box>

@@ -1,7 +1,7 @@
 import { Typography, Container, Button, Stack, styled, Grid, Accordion, } from '@mui/material';
 import Box from '@mui/material/Box';
 import Image from 'next/image';
-import images from "../../public/images/images";
+import images from "../public/images/images";
 import TextField from '@mui/material/TextField';
 
 const StyledButton2 = styled(Button)(({ theme }) => `

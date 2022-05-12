@@ -11,7 +11,7 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import Link from "next/link";
-import images from "../../public/images/images";
+import images from "../public/images/images";
 import { lineHeight } from "@mui/system";
 import { useState } from "react";
 import Menu from "@mui/material/Menu";
@@ -102,6 +102,7 @@ export default function Navbar() {
                             <StyledButton
                               variant="contained"
                               sx={{ backgroundColor: "#31303E" }}
+                              className="md:bg-[#31303E]"
                             >
                               IDO
                             </StyledButton>
@@ -118,6 +119,7 @@ export default function Navbar() {
                             fontWeight: "bold",
                             fontSize: "1rem",
                           }}
+                          className="md:bg-[#31303E]"
                         >
                           IMO
                         </StyledButton>
@@ -131,6 +133,7 @@ export default function Navbar() {
                             fontWeight: "semi-bold",
                             fontSize: "1rem",
                           }}
+                          className="md:bg-[#31303E]"
                         >
                           IGO
                         </StyledButton>
@@ -173,6 +176,7 @@ export default function Navbar() {
                           vertical: "top",
                           horizontal: "left",
                         }}
+                        className="rounded-[20px]"
                       >
                         <MenuItem
                           sx={{ fontSize: "1.2rem" }}
@@ -241,7 +245,7 @@ export default function Navbar() {
                 </Box>
               </Grid>
               <Grid item xs={7.4}>
-                <Box sx={{ transform: "translateY(180%)" }}>
+                <Box sx={{ transform: "translateY(120%)" }}>
                   <Typography variant="h3" color="white" textAlign="center">
                     A LAUNCHPAD FOR <br /> INITIAL METAVERSE OFFEREINGS
                   </Typography>
@@ -259,10 +263,11 @@ export default function Navbar() {
                         sx={{
                           borderRadius: "20px",
                           fontSize: "1rem",
-                          backgroundColor: "#5133D5",
                           marginTop: "10px",
                           fontWeight: "bold",
                         }}
+
+                          className='bg-[#5133D5]'
                       >
                         DISCOVER
                       </StyledButton2>
@@ -274,8 +279,8 @@ export default function Navbar() {
                         sx={{
                           borderRadius: "20px",
                           fontSize: "1rem",
-                          backgroundColor: "#31303E",
                         }}
+                        className="bg-[#31303E]"
                       >
                         BUY TOKENS
                       </StyledButton>

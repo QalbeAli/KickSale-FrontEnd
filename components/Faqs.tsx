@@ -26,7 +26,7 @@ ${accordionSummaryClasses.expanded}:{
 export default function Faqs() {
     return(
         <>
-        <Box py={10} sx={{backgroundColor:"black"}}>
+        <Box py={10} sx={{backgroundColor:"black"}}>2
         <Box
         py={30}
         sx={{

@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Display from './components/Display'
-import Tier from './components/Tier'
-import Faqs from './components/Faqs'
-import Ethereum from './components/Ethereum'
-import Footer from './components/Footer'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Display from '../components/Display'
+import Tier from '../components/Tier'
+import Faqs from '../components/Faqs'
+import Ethereum from '../components/Ethereum'
+import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (

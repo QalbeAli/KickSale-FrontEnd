@@ -18,6 +18,8 @@ import projectcard1 from '../../public/images/projectcard1.png';
 import projectcard2 from '../../public/images/projectcard2.png';
 import projectcard3 from '../../public/images/projectcard3.png';
 import projectcard4 from '../../public/images/projectcard4.png';
+import kck from '../../public/images/kck.png';
+import tether from '../../public/images/tether.png';
 export default {
     logo1,
     bg1,
@@ -39,5 +41,6 @@ export default {
     projectcard2,
     projectcard3,
     projectcard4,
-
+    kck,
+    tether,
 }
